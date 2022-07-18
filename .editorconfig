@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0437: El tipo entra en conflicto con un espacio de nombres importado
+dotnet_diagnostic.CS0437.severity = none

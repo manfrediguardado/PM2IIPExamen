@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2IIPExamen.MainPage">
+
+    <StackLayout>
+        <Image Source="paisajes.gif" x:Name="imgFoto" WidthRequest="200" HeightRequest="200" />
+        <Button x:Name="btnFoto" Text="Tomar Fotografía" Clicked="btnFoto_Clicked"/>
+        <Grid ColumnDefinitions="*,*">
+            <Label x:Name="lblLatitud" Text="Latitud" />
+            <Label Grid.Column="1" x:Name="lblLongitud" Text="Longitud" />
+        </Grid>
+
+        <Entry Placeholder="Descripción" x:Name="txtDescripcion" />
+        <Label x:Name="lblAudio" Text="Sin acción" />
+        <Grid ColumnDefinitions="*,*,*">
+            <Button x:Name="btnGrabar" Text="Grabar" Clicked="btnGrabar_Clicked"/>
+            <Button Grid.Column="1" x:Name="btnDetener" Text="Detener" Clicked="btnDetener_Clicked"/>
+            <Button Grid.Column="2" x:Name="btnReproducir" Text="Reproducir" Clicked="btnReproducir_Clicked"/>
+        </Grid>
+
+        <Grid ColumnDefinitions="*,*" >
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+            <Button Grid.Column="1" x:Name="btnListar" Text="Listar" Clicked="btnListar_Clicked"/>
+        </Grid>
+
+
+    </StackLayout>
+
+</ContentPage>
